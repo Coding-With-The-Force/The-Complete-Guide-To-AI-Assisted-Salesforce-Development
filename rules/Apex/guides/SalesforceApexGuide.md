@@ -12,3 +12,4 @@
 10. Apex class names should be PascalCase and method and variable names should be camelCase 
 11. Implement exception handling for all database transactions in your Apex Class.
 12. When you create an Apex class that is a controller for a lightning web component (LWC), there should be NO business logic in the controller. You should make a separate Apex class that is a service class for the business logic and call that service class in your Apex controller. 
+13. Make sure that all user input received from a lightning web component are protected against soql injection by using the escapeSingleQuotes method. Additionally make sure to sanitize the values received from the lightning web component by using the escapehtml4 method 
