@@ -5,7 +5,7 @@
 3. Utilize SLDS (Salesforce Lightning Design System) for consistent styling and layout.   
 4. Implement accessibility features, including proper ARIA attributes and keyboard navigation.   
 5. Use the lightning-record-edit-form component for handling record creation and updates.   
-6. Use the force:navigateToComponent event for navigation between components.   
+6. Use the lightning navigation for all navigation in the lightning web component (for example, use lightning navigation when traversing to a web page, a Salesforce record, another lwc, etc).   
 7. Generate a jest test for each lightning web component you create.   
 8. Opt to make the lightning web component variables configurable by a user whenever appropriate.   
 9. Create custom labels to display all text that occurs in inner html for the lightning web component.
