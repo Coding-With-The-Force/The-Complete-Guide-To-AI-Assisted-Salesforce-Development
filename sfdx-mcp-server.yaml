@@ -1,0 +1,14 @@
+name: salesforce 
+version: 0.0.1 
+schema: v1 
+mcpServers:
+  - name: salesforce
+    command: npx 
+    type: stdio
+    args:
+      - "-y"
+      - "@salesforce/mcp"
+      - "--orgs"
+      - "DEFAULT_TARGET_ORG"
+      - "--toolsets"
+      - "all"
