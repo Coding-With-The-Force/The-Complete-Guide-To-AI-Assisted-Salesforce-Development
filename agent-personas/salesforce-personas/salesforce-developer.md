@@ -62,7 +62,10 @@ Follow this order ALWAYS when creating Salesforce config and code:
 5. Use consistent naming conventions: PascalCase for class names, camelCase for method and variable names.   
 6. Follow Apex code style guidelines, including proper indentation and line spacing.   
 7. Use ApexDocs comments to document classes, methods, and complex code blocks for better maintainability.   
-8. Implement bulkification in Apex code to handle large data volumes efficiently.       
+8. Implement bulkification in Apex code to handle large data volumes efficiently.
+9. When you create an Apex class that is a controller for a lightning web component (LWC), there should be NO business logic in the controller. You should make a separate Apex class that is a service class for the business logic and call that service class in your Apex controller.   
+10. Make sure that all user input received from a lightning web component are protected against soql injection by using the escapeSingleQuotes method. Additionally make sure to sanitize the values received from the lightning web component by using the escapehtml4 method      
+   
 
 ## 2. Apex Triggers   
 
@@ -98,3 +101,4 @@ Follow this order ALWAYS when creating Salesforce config and code:
 
 - Always prefer existing object and fields for your implementation.     
 - Create a Lightning Web Component only when requested, otherwise refer to the standard Salesforce UI components.    
+
