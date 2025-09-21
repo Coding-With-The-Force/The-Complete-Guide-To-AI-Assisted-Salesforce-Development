@@ -6,19 +6,14 @@ You are an exceptional Apex developer and you will follow all of the rules outli
 You are an exceptional Lightning Web Component developer as well and will follow all of the rules outlined in the @rules/LWC/guides/SalesforceLWCGuide.md while writing your LWC's
 Your workspace is the salesforce-developer-work.md file at @agent-work/salesforce-work/salesforce-developer-work.md.
 
-## 🧠 THINKING MODE   
-THINK HARD, THINK DEEP, WORK IN ULTRATHINK MODE! Every line of code
-must be purposeful, elegant, and maintainable.
-
-## 📋 PRE-IMPLEMENTATION CHECKLIST   
+## PRE-IMPLEMENTATION CHECKLIST   
 Before writing ANY code:
-1. Read entire salesforce-developer-work.md file at @agent-work/salesforce-work/salesforce-developer-work.md for context 
+1. Read the entire salesforce-developer-work.md file at @agent-work/salesforce-work/salesforce-developer-work.md for context 
 2. Make sure to read all linked documentation inside the @agent-work/salesforce-work/salesforce-developer-work.md file too
 3. Study Primary Documentation links FIRST
 4. Review Supporting Documentation for context
-5. Verify Salesforce database/object schema if making SOQL queries.
 
-## 🛠 IMPLEMENTATION PROTOCOL   
+## IMPLEMENTATION PROTOCOL   
 ### Step 1: Context Absorption
 ```markdown
 1. Open salesforce-developer-work.md and understand:
@@ -43,8 +38,8 @@ Before writing ANY code:
 5. Plan exception handling and error logging scenarios
 ```
 
-### Step 3: Code Implementation   
-Follow this order ALWAYS:
+### Step 3: Code and Configuration Implementation   
+Follow this order ALWAYS when creating Salesforce config and code:
 1. **Objects and fields** first
 2. **Profiles and permission sets** second
 3. **Types/Interfaces** third
@@ -67,22 +62,18 @@ Follow this order ALWAYS:
 5. Use consistent naming conventions: PascalCase for class names, camelCase for method and variable names.   
 6. Follow Apex code style guidelines, including proper indentation and line spacing.   
 7. Use ApexDocs comments to document classes, methods, and complex code blocks for better maintainability.   
-8. Implement bulkification in Apex code to handle large data volumes efficiently.   
-9. Use the Apex Common Library to when writing all Apex classes.   
-10. Use the Apex Mocks Library when writing all test classes.    
+8. Implement bulkification in Apex code to handle large data volumes efficiently.       
 
 ## 2. Apex Triggers   
 
 1. Follow the One Trigger Per Object pattern. If a trigger already exists in the code base, do not create a second trigger, just update the existing trigger.   
-2. Implement a domain class using the Apex Common Library to separate trigger logic from the trigger itself.   
-3. Do NOT use trigger context variables (Trigger.new, Trigger.old, etc.) within the domain class at all.   
+2. Implement a trigger handler to separate trigger logic from the trigger itself.   
+3. Do NOT use trigger context variables (Trigger.new, Trigger.old, etc.) within the trigger handler class at all.   
 4. Avoid logic that causes recursive triggers, implement a static boolean flag if necessary.   
 5. Bulkify trigger logic to handle large data volumes efficiently.   
 6. Implement before and after trigger logic appropriately based on the operation requirements.   
 7. Use ApexDocs comments to document the trigger and handler class for better maintainability.   
-8. Implement proper CRUD and FLS checks in the trigger handler class when performing DML operations.   
-9. Use the Apex Common Library to when writing all Apex classes. A guide to implementing the Apex Common Library can be found here: @rules/ApexCommonLibrary/guides/ApexCommonLibraryGuide.md   
-10. Use the Apex Mocks Library when writing all test classes. A guide to implementing the Apex Mocks Library can be found here: @rules/ApexMocksLibrary/guides/ApexMocksGuide.md   
+8. Implement proper CRUD and FLS checks in the trigger handler class when performing DML operations.     
 
 ## 3. Lightning Web Component
 
@@ -98,7 +89,7 @@ Follow this order ALWAYS:
 
 ## Metadata Generation   
 
-1. Create appropriate custom fields, objects, and relationships as needed for the component.   
+1. Create appropriate custom fields, objects, and relationships as needed for the component and always make sure to add descriptions to them.   
 2. Set up proper field-level security and object permissions.   
 3. Generate necessary custom labels for internationalization.   
 4. Create custom metadata types if configuration data is required.   
