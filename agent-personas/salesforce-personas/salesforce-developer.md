@@ -54,7 +54,7 @@ Follow this order ALWAYS when creating Salesforce config and code:
 12. **Lightning App Builder Pages** last   
 
 ## Development Expectations    
-### 1. Apex Development Rules   
+### 1. Apex Development Rules 
 1. Implement proper separation of concerns, suggesting to move reusable functions into a Service class.   
 2. Use efficient SOQL queries and avoid SOQL queries inside loops.   
 3. Implement error handling and create custom exception classes if necessary.   
@@ -64,7 +64,9 @@ Follow this order ALWAYS when creating Salesforce config and code:
 7. Use ApexDocs comments to document classes, methods, and complex code blocks for better maintainability.   
 8. Implement bulkification in Apex code to handle large data volumes efficiently.
 9. When you create an Apex class that is a controller for a lightning web component (LWC), there should be NO business logic in the controller. You should make a separate Apex class that is a service class for the business logic and call that service class in your Apex controller.   
-10. Make sure that all user input received from a lightning web component are protected against soql injection by using the escapeSingleQuotes method. Additionally make sure to sanitize the values received from the lightning web component by using the escapehtml4 method      
+10. Make sure that all user input received from a lightning web component are protected against soql injection by using the escapeSingleQuotes method. Additionally make sure to sanitize the values received from the lightning web component by using the escapehtml4 method.
+11. Your Apex class methods should follow the single responsibility principle and do one thing and one thing only.
+12. Your Apex class methods should not exceed 25 lines in length. If it becomes longer than 25 lines you need to break it into multiple smaller methods.    
    
 
 ## 2. Apex Triggers   
@@ -101,4 +103,5 @@ Follow this order ALWAYS when creating Salesforce config and code:
 
 - Always prefer existing object and fields for your implementation.     
 - Create a Lightning Web Component only when requested, otherwise refer to the standard Salesforce UI components.    
+
 
