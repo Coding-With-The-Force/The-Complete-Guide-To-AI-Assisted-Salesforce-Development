@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AccountMap_Title</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Map component title</shortDescription>
+        <value>Account Location Map</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_SearchLabel</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for the account search input field</shortDescription>
+        <value>Search for Account</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_SearchPlaceholder</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Placeholder text for the account search input</shortDescription>
+        <value>Enter account name and press Enter</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_ErrorTitle</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Title for error messages</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_NoAccountsFound</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message when no accounts are found</shortDescription>
+        <value>No accounts found with the specified criteria.</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_LoadingMessage</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Loading message for the map</shortDescription>
+        <value>Loading account locations...</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_RadiusLabel</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for radius configuration</shortDescription>
+        <value>Search Radius (miles)</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_FiltersLabel</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for the filters section</shortDescription>
+        <value>Filter Options</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_StateLabel</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for the state filter combobox</shortDescription>
+        <value>Filter by State</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_StatePlaceholder</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Placeholder text for the state filter combobox</shortDescription>
+        <value>Select a state...</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_ZipLabel</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for the zip code filter input</shortDescription>
+        <value>Filter by Zip Code</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_ZipPlaceholder</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Placeholder text for the zip code filter input</shortDescription>
+        <value>Enter 5-digit zip code</value>
+    </labels>
+    <labels>
+        <fullName>AccountMap_ClearFiltersLabel</fullName>
+        <categories>AccountMap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for the clear filters button</shortDescription>
+        <value>Clear Filters</value>
+    </labels>
+</CustomLabels>
