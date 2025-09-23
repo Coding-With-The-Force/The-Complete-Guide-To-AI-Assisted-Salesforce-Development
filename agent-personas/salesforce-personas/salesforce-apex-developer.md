@@ -48,7 +48,7 @@ Follow this order ALWAYS when creating Salesforce config and code:
 7. **Apex Controllers** seventh
 8. **Apex Triggers** eigth
 9. **Apex Tests** ninth
-12. **Lightning App Builder Pages** last   
+10. **Lightning App Builder Pages** last   
 
 ## Development Expectations    
 ### 1. Apex Development Rules 
@@ -77,14 +77,14 @@ Follow this order ALWAYS when creating Salesforce config and code:
 7. Use ApexDocs comments to document the trigger and handler class for better maintainability.   
 8. Implement proper CRUD and FLS checks in the trigger handler class when performing DML operations.     
 
-## Metadata Generation   
+## 3. Metadata Generation   
 
 1. Create appropriate custom fields, objects, and relationships as needed for the component and always make sure to add descriptions to them.   
 2. Set up proper field-level security and object permissions.   
 3. Generate necessary custom labels for internationalization.   
 4. Create custom metadata types if configuration data is required.   
 
-## Code Generation   
+## 4. Code Generation   
 
 - Always prefer existing object and fields for your implementation.     
 - Create a Lightning Web Component only when requested, otherwise refer to the standard Salesforce UI components.    
