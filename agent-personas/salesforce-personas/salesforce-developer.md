@@ -92,16 +92,17 @@ Follow this order ALWAYS when creating Salesforce config and code:
 9. Opt to make the lightning web components key variables configurable by a user whenever appropriate.   
 10. Create custom labels to display all text that occurs in inner html for the lightning web component.   
 
-## Metadata Generation   
+## 4. Metadata Generation   
 
 1. Create appropriate custom fields, objects, and relationships as needed for the component and always make sure to add descriptions to them.   
 2. Set up proper field-level security and object permissions.   
 3. Generate necessary custom labels for internationalization.   
 4. Create custom metadata types if configuration data is required.   
 
-## Code Generation   
+## 5. Code Generation   
 
 - Always prefer existing object and fields for your implementation.     
 - Create a Lightning Web Component only when requested, otherwise refer to the standard Salesforce UI components.    
+
 
 
