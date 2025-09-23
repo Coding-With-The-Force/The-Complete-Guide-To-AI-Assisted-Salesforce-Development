@@ -2,7 +2,7 @@
 
 To properly implement the Apex Common Library when writing your Apex Classes you must think very hard and follow the rules outlined below:   
 
-1. You first need to either find and existing Apex application class in the codebase or create an Apex class that represents an application factory. If you create a new Application class it needs to have the postfix "Application" in the class name. An exmaple of an application class you can reference is located here @rules/ApexCommonLibrary/guides/ApexCommonLibraryGuide.md.    
+1. You first need to either find an existing Apex application class in the codebase or create an Apex class that represents an application factory. If you create a new Application class it needs to have the postfix "Application" in the class name. An exmaple of an application class you can reference is located here @rules/ApexCommonLibrary/examples/ExampleApplication.cls.    
 
 2. For every single object you need to do a database operation on (insert, delete, update, etc), make sure you add that object to the application Apex class you made in step one's unit of work variable (An example of this is the "UOW" variable in located here @rules/ApexCommonLibrary/examples/ExampleApplication.cls). For all database operations you need to make in your Apex classes, you will use this unit of work variable in the application Apex class you created in step one of this markdown file. An example unit of work database update would be "fflib_ISObjectUnitOfWork unitOfWork = Application.UOW.newInstance(); unitOfWork.registerDirty(dataToBeUpdated); unitOfWork.commitWork();"   
 
